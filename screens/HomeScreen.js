@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
-import { Button as PaperButton } from 'react-native-paper';
+import { View, Text, StyleSheet } from 'react-native';
+import { Button } from 'react-native-paper';
 
-function HomeScreen() {
+function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
-      
+      {}
+      <Button mode="contained" onPress={() => navigation.navigate('Second')}>
+        Go to Second Screen
+      </Button>
     </View>
   );
 }
